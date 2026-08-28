@@ -1,0 +1,68 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "drain-sinkhorn"
+version = "0.1.0"
+description = "Safe physical elimination for candidate-batched entropic optimal transport"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+keywords = [
+  "optimal-transport",
+  "sinkhorn",
+  "triton",
+  "pytorch",
+  "gpu",
+  "dynamic-batching",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: GPU :: NVIDIA CUDA",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering",
+]
+dependencies = [
+  "torch>=2.5",
+  "triton>=3.1",
+  "flash-sinkhorn==0.3.3.post1",
+]
+
+[project.optional-dependencies]
+dev = ["build", "pytest>=8", "ruff>=0.6"]
+packer19 = [
+  "anndata>=0.10",
+  "numpy>=1.24",
+  "scikit-learn>=1.3",
+  "scipy>=1.10",
+]
+repro = ["numpy>=1.24"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]
+markers = ["cuda: requires CUDA, Triton, and FlashSinkhorn"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]
+
+[tool.ruff.lint.per-file-ignores]
+"src/drainsinkhorn/_flash_packed_triton.py" = ["I001"]
+"src/drainsinkhorn/flash.py" = ["I001"]
+"src/drainsinkhorn/flash_packed.py" = ["I001"]
+"benchmarks/packer19/analyze.py" = ["E501", "I001", "UP035"]
+"benchmarks/packer19/prepare.py" = ["E501", "I001", "UP012"]

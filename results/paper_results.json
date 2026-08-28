@@ -1,0 +1,81 @@
+{
+  "schema": "drainsinkhorn.paper-results.v1",
+  "speedup_direction": "baseline_time / proposed_time",
+  "component_results": [
+    {
+      "campaign": "C80",
+      "workload": "Packer19",
+      "contrast": "serial_audit / batched_two_sided_audit",
+      "geometric_mean": 1.0731697954340196,
+      "ci95": [1.0727023185439795, 1.0737463774117018],
+      "wins": 24,
+      "paired_units": 24
+    },
+    {
+      "campaign": "C80",
+      "workload": "Packer19",
+      "contrast": "batched_two_sided_audit / batched_row_screen",
+      "geometric_mean": 1.0551246839622261,
+      "ci95": [1.054652330162525, 1.055603660688741],
+      "wins": 24,
+      "paired_units": 24
+    },
+    {
+      "campaign": "C80-LM",
+      "workload": "Packer19",
+      "contrast": "logical_mask / physical_compaction",
+      "geometric_mean": 1.2243445474022865,
+      "ci95": [1.2240157803086327, 1.2246823042735064],
+      "wins": 24,
+      "paired_units": 24,
+      "physical_candidate_slots": {"logical_mask": 256, "physical_compaction": 156},
+      "median_energy_joules": {"logical_mask": 879.940, "physical_compaction": 688.133}
+    },
+    {
+      "campaign": "C66",
+      "workload": "MetroPT-3 failure-3",
+      "contrast": "matched_static / physical_compaction",
+      "geometric_mean": 1.7447228474139829,
+      "ci95": [1.7434097174254384, 1.7467058479457505],
+      "wins": 6,
+      "paired_units": 6
+    }
+  ],
+  "deployment_results": [
+    {
+      "campaign": "C80-LM",
+      "workload": "Packer19",
+      "contrast": "public_flash_serial / complete_drainsinkhorn",
+      "geometric_mean": 14.192772,
+      "ci95": [14.184883, 14.200847]
+    },
+    {
+      "campaign": "C66",
+      "workload": "MetroPT-3 failure-3",
+      "contrast": "public_flash_serial / complete_drainsinkhorn",
+      "geometric_mean": 4.074308194249972,
+      "ci95": [4.067817871483146, 4.078117500446371]
+    },
+    {
+      "campaign": "C63",
+      "workload": "ImageNet-32 PCA500 OT-Flow-Matching",
+      "contrast": "public_flash_serial / complete_active_training_pipeline",
+      "geometric_mean": 2.7857283850954992,
+      "training_updates": 50000,
+      "quality_noninferiority_nfe": [4, 8, 16]
+    }
+  ],
+  "mechanism_intervention": {
+    "campaign": "M3",
+    "workload": "MetroPT-3 failure-4",
+    "same_problem_multiset": true,
+    "same_sum_profile_depth": 16202,
+    "static_over_active": {
+      "oracle_homogeneous": 1.104517431027073,
+      "heterogeneous": 1.2171708269431782,
+      "random_20260827": 1.257659224523183,
+      "random_20260828": 1.2346701543085166,
+      "random_20260829": 1.2709248812525389
+    }
+  }
+}

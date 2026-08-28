@@ -1,0 +1,39 @@
+{
+  "schema": "drainsinkhorn.source-provenance.v1",
+  "formal_campaign": "C80-LM",
+  "formal_source_commit": "d264c7d6a5324d6bfec394364141977fef144383",
+  "formal_source_archive_sha256": "fbcf3fcfe671e0751b7a6d7342a34062e7c0bd7fb54bc5dbc8c8808b59995f34",
+  "portable_release_archive_sha256": "6ec80ee7b869e847f89ca477a645f8080abf20a4d832923e2ead356f050b14e6",
+  "formal_host_archives": {
+    "host0": "d338265766882a987568a49510cd426e30c05fbd796aac7f584a4ac99a53ca4e",
+    "host1": "39252ad05158b4dc4cd5a60ea204dda9005b1e7029171a26d82245670b7799ab"
+  },
+  "analysis_archive_sha256": "7b67a21abc758e58f671081f3612fdccca8e6f3698207ab88714bf04096117c1",
+  "analysis_commit": "793c08cd5bff13b7f854aba43864bf0065de738c",
+  "upstream_backend": {
+    "package": "flash-sinkhorn",
+    "version": "0.3.3.post1",
+    "tree_sha256": "1d2e2fa3bf7b76b80d760abeb25ee44a689bb2ca87522d1d783e2477acd21efd",
+    "repository": "https://github.com/ot-triton-lab/flash-sinkhorn"
+  },
+  "evidence_locked_files": {
+    "src/drainsinkhorn/flash.py": {
+      "formal_path": "algorithm/src/sinkhorn_ops/flash.py",
+      "formal_sha256": "280fb16a6a98b35af134d94324ed248aa7a2989ea0ea86599befa168e174c17f",
+      "public_sha256": "29d7bcb013e5be2ac4956e4c0e6cdf3119c09b7d6af63730baab359d423cf4d8",
+      "public_change": "documentation-only removal of internal sinkhorn_ops references"
+    },
+    "src/drainsinkhorn/_flash_packed_triton.py": {
+      "formal_path": "algorithm/src/sinkhorn_ops/_flash_packed_triton.py",
+      "formal_sha256": "d7bf3fa3c4b8810c7191bf0625a6575560545095409aedfbb54d8b5f4ddc190b",
+      "public_sha256": "e3d7d642e36fce26c197e28b08b84aa92689285e5d1d8ec2074a51a839c29ef9",
+      "public_change": "documentation-only package namespace change"
+    },
+    "src/drainsinkhorn/flash_packed.py": {
+      "formal_path": "algorithm/src/sinkhorn_ops/flash_packed.py",
+      "formal_sha256": "3149993ee90f6479408813f669eacc693fdc9d33f436003a4714c4e0812c43b7",
+      "public_sha256": "42a1bfaa24c3e29c5ba4d9e6717eb34550241028d6742d0ca0fe861352acbf0e",
+      "public_change": "one import namespace changed from sinkhorn_ops to drainsinkhorn; one corrupted documentation path restored"
+    }
+  }
+}

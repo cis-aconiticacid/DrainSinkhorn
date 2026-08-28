@@ -1,0 +1,14 @@
+DrainSinkhorn 0.1.0
+
+DrainSinkhorn is an outer execution layer for FlashSinkhorn.  It depends on
+flash-sinkhorn 0.3.3.post1 and imports its fused shifted-potential kernels and
+streaming transport-application routines at runtime.
+
+FlashSinkhorn is developed by the OT Triton Lab and distributed under the MIT
+License:
+
+  https://github.com/ot-triton-lab/flash-sinkhorn
+
+DrainSinkhorn's candidate-axis Triton program, screening controller, release
+verification, and physical compaction are maintained in this repository.  No
+FlashSinkhorn source file is vendored here.

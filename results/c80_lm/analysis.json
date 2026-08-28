@@ -1,0 +1,585 @@
+{
+  "all_required_results": 120,
+  "arm_summary": {
+    "fw": {
+      "audit_events_median": 8.0,
+      "audit_seconds_median": 0.6387957632541656,
+      "compaction_events_median": 0.0,
+      "compaction_seconds_median": 0.0,
+      "consumer_seconds_median": 1.85570870898664,
+      "correction_seconds_median": 1.7063937950134278,
+      "endpoint_seconds_median": 3.888108109124005,
+      "endpoint_seconds_p95": 3.9031122263520954,
+      "frozen_but_computed_slots_median": 0.0,
+      "gpu_energy_joules_median": 877.2964999999999,
+      "logical_live_candidate_slots_median": 256.0,
+      "logical_mask_applications_median": 0.0,
+      "logical_mask_seconds_median": 0.0,
+      "paired_units": 24,
+      "peak_memory_allocated_bytes_median": 84738048.0,
+      "peak_memory_reserved_bytes_median": 272629760.0,
+      "physical_candidate_slots_median": 256.0,
+      "ready_arrays_to_consumer_seconds_median": 3.888108109124005,
+      "release_verified_candidate_count_median": 8.0,
+      "release_verifier_candidate_count_median": 8.0,
+      "release_verifier_seconds_median": 0.1042160028591752,
+      "screen_pass_candidate_count_median": 33.0,
+      "synchronization_seconds_median": 3.7482939660549164e-05,
+      "unclassified_overhead_seconds_median": 0.0
+    },
+    "lm": {
+      "audit_events_median": 8.0,
+      "audit_seconds_median": 0.6385059654712677,
+      "compaction_events_median": 0.0,
+      "compaction_seconds_median": 0.0,
+      "consumer_seconds_median": 1.855931150726974,
+      "correction_seconds_median": 1.7063121223449706,
+      "endpoint_seconds_median": 3.886587589047849,
+      "endpoint_seconds_p95": 3.9008516104891897,
+      "frozen_but_computed_slots_median": 100.0,
+      "gpu_energy_joules_median": 879.94,
+      "logical_live_candidate_slots_median": 156.0,
+      "logical_mask_applications_median": 20.0,
+      "logical_mask_seconds_median": 0.00030558399809524415,
+      "paired_units": 24,
+      "peak_memory_allocated_bytes_median": 84738048.0,
+      "peak_memory_reserved_bytes_median": 274726912.0,
+      "physical_candidate_slots_median": 256.0,
+      "ready_arrays_to_consumer_seconds_median": 3.886587589047849,
+      "release_verified_candidate_count_median": 8.0,
+      "release_verifier_candidate_count_median": 8.0,
+      "release_verifier_seconds_median": 0.1045365184545517,
+      "screen_pass_candidate_count_median": 8.0,
+      "synchronization_seconds_median": 3.562308847904205e-05,
+      "unclassified_overhead_seconds_median": 0.0
+    },
+    "official": {
+      "audit_events_median": null,
+      "audit_seconds_median": null,
+      "compaction_events_median": null,
+      "compaction_seconds_median": null,
+      "consumer_seconds_median": 1.8543397393077612,
+      "correction_seconds_median": null,
+      "endpoint_seconds_median": 45.06563405971974,
+      "endpoint_seconds_p95": 45.32000716179609,
+      "frozen_but_computed_slots_median": null,
+      "gpu_energy_joules_median": 11233.4165,
+      "logical_live_candidate_slots_median": null,
+      "logical_mask_applications_median": null,
+      "logical_mask_seconds_median": null,
+      "paired_units": 24,
+      "peak_memory_allocated_bytes_median": 304039424.0,
+      "peak_memory_reserved_bytes_median": 524288000.0,
+      "physical_candidate_slots_median": null,
+      "ready_arrays_to_consumer_seconds_median": 45.06563405971974,
+      "release_verified_candidate_count_median": null,
+      "release_verifier_candidate_count_median": null,
+      "release_verifier_seconds_median": null,
+      "screen_pass_candidate_count_median": null,
+      "synchronization_seconds_median": null,
+      "unclassified_overhead_seconds_median": null
+    },
+    "pc": {
+      "audit_events_median": 8.0,
+      "audit_seconds_median": 0.40059566497802734,
+      "compaction_events_median": 5.0,
+      "compaction_seconds_median": 0.003369839996099472,
+      "consumer_seconds_median": 1.8564331075176597,
+      "correction_seconds_median": 1.070777087211609,
+      "endpoint_seconds_median": 3.176219846121967,
+      "endpoint_seconds_p95": 3.1862796345725655,
+      "frozen_but_computed_slots_median": 0.0,
+      "gpu_energy_joules_median": 688.133,
+      "logical_live_candidate_slots_median": 156.0,
+      "logical_mask_applications_median": 0.0,
+      "logical_mask_seconds_median": 0.0,
+      "paired_units": 24,
+      "peak_memory_allocated_bytes_median": 112134144.0,
+      "peak_memory_reserved_bytes_median": 270532608.0,
+      "physical_candidate_slots_median": 156.0,
+      "ready_arrays_to_consumer_seconds_median": 3.176219846121967,
+      "release_verified_candidate_count_median": 8.0,
+      "release_verifier_candidate_count_median": 8.0,
+      "release_verifier_seconds_median": 0.10450628399848938,
+      "screen_pass_candidate_count_median": 8.0,
+      "synchronization_seconds_median": 3.570783883333206e-05,
+      "unclassified_overhead_seconds_median": 0.0
+    },
+    "w1": {
+      "audit_events_median": 39.0,
+      "audit_seconds_median": 0.5121770454570651,
+      "compaction_events_median": 0.0,
+      "compaction_seconds_median": 0.0,
+      "consumer_seconds_median": 1.8556672167032957,
+      "correction_seconds_median": 1.3788045139312746,
+      "endpoint_seconds_median": 3.52598390635103,
+      "endpoint_seconds_p95": 3.5426092563197016,
+      "frozen_but_computed_slots_median": 0.0,
+      "gpu_energy_joules_median": 719.8254999999999,
+      "logical_live_candidate_slots_median": 156.0,
+      "logical_mask_applications_median": 0.0,
+      "logical_mask_seconds_median": 0.0,
+      "paired_units": 24,
+      "peak_memory_allocated_bytes_median": 62822912.0,
+      "peak_memory_reserved_bytes_median": 268435456.0,
+      "physical_candidate_slots_median": 156.0,
+      "ready_arrays_to_consumer_seconds_median": 3.52598390635103,
+      "release_verified_candidate_count_median": 8.0,
+      "release_verifier_candidate_count_median": 8.0,
+      "release_verifier_seconds_median": 0.10434919875115156,
+      "screen_pass_candidate_count_median": 8.0,
+      "synchronization_seconds_median": 0.00022076629102230072,
+      "unclassified_overhead_seconds_median": 0.0
+    }
+  },
+  "campaign_id": "C80-LM",
+  "claim_rule": "interpret T_LM/T_PC only after every LM/PC semantic and correctness gate passes",
+  "classification": "FORMAL_TWO_HOST_LOGICAL_MASK_VS_PHYSICAL_COMPACTION",
+  "csv_outputs": [
+    "/home/xwen/gpu-results/c80_lm_analysis_793c08c_20260828T1825Z/paired_ratios.csv",
+    "/home/xwen/gpu-results/c80_lm_analysis_793c08c_20260828T1825Z/absolute_metrics.csv",
+    "/home/xwen/gpu-results/c80_lm_analysis_793c08c_20260828T1825Z/lm_pc_semantic_gates.csv"
+  ],
+  "data_sha256": "9106462ee86694a902422942a5b9dea5570ca51de31646805da857113ee82084",
+  "flash_tree_sha256": "1d2e2fa3bf7b76b80d760abeb25ee44a689bb2ca87522d1d783e2477acd21efd",
+  "gpu_inventories": [
+    {
+      "records": [
+        {
+          "index": 0,
+          "name": "NVIDIA A100-SXM4-80GB",
+          "uuid": "7a61abf5-cddc-009e-9aee-e8a76ff30816"
+        },
+        {
+          "index": 1,
+          "name": "NVIDIA A100-SXM4-80GB",
+          "uuid": "b9cf5090-8e2a-3195-cb74-f9d4053c404f"
+        },
+        {
+          "index": 2,
+          "name": "NVIDIA A100-SXM4-80GB",
+          "uuid": "9dfcbf18-8447-fe66-fa38-5a4c0b479e3a"
+        },
+        {
+          "index": 3,
+          "name": "NVIDIA A100-SXM4-80GB",
+          "uuid": "c6026d54-ee8b-2248-00f6-ec9ec506c561"
+        }
+      ],
+      "uuids": [
+        "7a61abf5-cddc-009e-9aee-e8a76ff30816",
+        "b9cf5090-8e2a-3195-cb74-f9d4053c404f",
+        "9dfcbf18-8447-fe66-fa38-5a4c0b479e3a",
+        "c6026d54-ee8b-2248-00f6-ec9ec506c561"
+      ]
+    },
+    {
+      "records": [
+        {
+          "index": 0,
+          "name": "NVIDIA A100-SXM4-80GB",
+          "uuid": "f3bb3faa-9c30-51b8-a87b-c8b5ae40c3af"
+        },
+        {
+          "index": 1,
+          "name": "NVIDIA A100-SXM4-80GB",
+          "uuid": "630a4931-4be1-271e-2646-00d5a28dc1f2"
+        },
+        {
+          "index": 2,
+          "name": "NVIDIA A100-SXM4-80GB",
+          "uuid": "bbe382d5-b34e-5e86-7868-87d92ab2e510"
+        },
+        {
+          "index": 3,
+          "name": "NVIDIA A100-SXM4-80GB",
+          "uuid": "952905f3-095e-e4c2-4a75-8297dab1c8f9"
+        }
+      ],
+      "uuids": [
+        "f3bb3faa-9c30-51b8-a87b-c8b5ae40c3af",
+        "630a4931-4be1-271e-2646-00d5a28dc1f2",
+        "bbe382d5-b34e-5e86-7868-87d92ab2e510",
+        "952905f3-095e-e4c2-4a75-8297dab1c8f9"
+      ]
+    }
+  ],
+  "manifest_entry_counts": [
+    307,
+    307
+  ],
+  "maximum_consumer_total_variation": 0.0,
+  "metadata_sha256": "fa21698a83427ef16b25690568738dcc04faa91a787256e6822f7be50681fb1d",
+  "physical_hosts": [
+    "t-20260823121700-5rtng-worker-0",
+    "t-20260823121700-5rtng-worker-1"
+  ],
+  "plan_sha256": {
+    "1884470933": "448b6233cd160c2ce44b7e174602ca2c4bfe82974dc4853f13bde9d7f827e5cc",
+    "55048408": "db972be5edd4fd0de6a4b56f00515e7d91940e2cd63fed849218ced64175ab7e",
+    "979986572": "9708a008a9ed1437250eba0a14adaf3f298340301122b70f42342cfd5eebe66a"
+  },
+  "primary_effect": {
+    "all_paired_ratios": [
+      1.2236238335502767,
+      1.2236249357929512,
+      1.2225308922895946,
+      1.2245796787895575,
+      1.2231596525719464,
+      1.2260391313397514,
+      1.2255874221657725,
+      1.224681721910074,
+      1.2255775135822409,
+      1.2234264599720908,
+      1.2252760837492636,
+      1.223463928565992,
+      1.2245461695845765,
+      1.2237211222671776,
+      1.2244626975832353,
+      1.224592347229856,
+      1.2244122998643798,
+      1.2245994308974952,
+      1.2249142715600363,
+      1.2240750755102636,
+      1.2249234635619124,
+      1.2238777695897374,
+      1.2250558733110697,
+      1.223524315413775
+    ],
+    "definition": "T_LM / T_PC; values >1 mean physical compaction is faster",
+    "equal_host_stratified_bootstrap_ci95": [
+      1.2240157803086327,
+      1.2246823042735064
+    ],
+    "geometric_mean_lm_over_pc": 1.2243445474022865,
+    "host_statistics": [
+      {
+        "bootstrap_ci95": [
+          1.223685057770777,
+          1.224922419175331
+        ],
+        "geometric_mean_lm_over_pc": 1.2242971180235291,
+        "host_index": 0,
+        "hostname": "t-20260823121700-5rtng-worker-0",
+        "paired_ratios": [
+          1.2236238335502767,
+          1.2236249357929512,
+          1.2225308922895946,
+          1.2245796787895575,
+          1.2231596525719464,
+          1.2260391313397514,
+          1.2255874221657725,
+          1.224681721910074,
+          1.2255775135822409,
+          1.2234264599720908,
+          1.2252760837492636,
+          1.223463928565992
+        ],
+        "paired_units": 12,
+        "wins": 12
+      },
+      {
+        "bootstrap_ci95": [
+          1.2241169582389198,
+          1.2246465599772098
+        ],
+        "geometric_mean_lm_over_pc": 1.224391978618462,
+        "host_index": 1,
+        "hostname": "t-20260823121700-5rtng-worker-1",
+        "paired_ratios": [
+          1.2245461695845765,
+          1.2237211222671776,
+          1.2244626975832353,
+          1.224592347229856,
+          1.2244122998643798,
+          1.2245994308974952,
+          1.2249142715600363,
+          1.2240750755102636,
+          1.2249234635619124,
+          1.2238777695897374,
+          1.2250558733110697,
+          1.223524315413775
+        ],
+        "paired_units": 12,
+        "wins": 12
+      }
+    ],
+    "paired_units": 24,
+    "wins": 24
+  },
+  "run_roots": [
+    "/home/xwen/gpu-results/c80_lm_formal_d264c7d_20260828T180311Z_host1/raw_formal",
+    "/home/xwen/gpu-results/c80_lm_formal_d264c7d_20260828T180413Z_host2/raw_formal"
+  ],
+  "schema": "forgetot_c80_lm_five_arm_formal_analysis_v1",
+  "secondary_effects": {
+    "fw_over_lm": {
+      "all_paired_ratios": [
+        1.0004325649140164,
+        1.0023080701004126,
+        1.0010673830576478,
+        0.9993359233154592,
+        1.001219487501642,
+        1.0001468907581537,
+        1.0001115931240006,
+        0.9997534405784212,
+        1.0006154494495654,
+        1.0002902401871732,
+        0.9987652461029449,
+        1.0006435756254837,
+        0.9997712040242661,
+        0.9995449379820414,
+        1.0000159435541864,
+        0.9996383320142068,
+        0.9997281983474742,
+        0.9994685656584326,
+        1.0000689056527248,
+        1.0000878662235269,
+        0.9992497914668189,
+        0.999984557164574,
+        0.9994575743393709,
+        0.9999596885419385
+      ],
+      "definition": "T_FW / T_LM; values >1 mean logical freezing is faster than fixed-width updating",
+      "equal_host_stratified_bootstrap_ci95": [
+        0.9998085590299767,
+        1.0003278138094103
+      ],
+      "geometric_mean": 1.0000691309593397,
+      "host_statistics": [
+        {
+          "bootstrap_ci95": [
+            0.9999053795687816,
+            1.0009039467674745
+          ],
+          "geometric_mean": 1.0003904370413579,
+          "host_index": 0,
+          "hostname": "t-20260823121700-5rtng-worker-0",
+          "paired_ratios": [
+            1.0004325649140164,
+            1.0023080701004126,
+            1.0010673830576478,
+            0.9993359233154592,
+            1.001219487501642,
+            1.0001468907581537,
+            1.0001115931240006,
+            0.9997534405784212,
+            1.0006154494495654,
+            1.0002902401871732,
+            0.9987652461029449,
+            1.0006435756254837
+          ],
+          "paired_units": 12,
+          "wins": 9
+        },
+        {
+          "bootstrap_ci95": [
+            0.9995961869090076,
+            0.9998951822642748
+          ],
+          "geometric_mean": 0.9997479280746275,
+          "host_index": 1,
+          "hostname": "t-20260823121700-5rtng-worker-1",
+          "paired_ratios": [
+            0.9997712040242661,
+            0.9995449379820414,
+            1.0000159435541864,
+            0.9996383320142068,
+            0.9997281983474742,
+            0.9994685656584326,
+            1.0000689056527248,
+            1.0000878662235269,
+            0.9992497914668189,
+            0.999984557164574,
+            0.9994575743393709,
+            0.9999596885419385
+          ],
+          "paired_units": 12,
+          "wins": 3
+        }
+      ],
+      "paired_units": 24,
+      "wins": 12
+    },
+    "official_over_pc": {
+      "all_paired_ratios": [
+        14.188404509325183,
+        14.168507935316601,
+        14.18449368356087,
+        14.2291884281933,
+        14.25109284741892,
+        14.176245695250898,
+        14.218104384756314,
+        14.225297728561426,
+        14.183129853314291,
+        14.173912697836332,
+        14.228086247368864,
+        14.23148921113939,
+        14.180887462450633,
+        14.168382587212278,
+        14.177622907369233,
+        14.187976563593406,
+        14.17638063493914,
+        14.183083366906697,
+        14.180732906111373,
+        14.204240748378044,
+        14.183621501724355,
+        14.17352778752439,
+        14.176432418328144,
+        14.176151135281932
+      ],
+      "definition": "T_O / T_PC; values >1 mean the full physical-compaction deployment is faster than official Flash serial",
+      "equal_host_stratified_bootstrap_ci95": [
+        14.184883408602728,
+        14.20084733231006
+      ],
+      "geometric_mean": 14.192772037195077,
+      "host_statistics": [
+        {
+          "bootstrap_ci95": [
+            14.18956627654084,
+            14.220069394581618
+          ],
+          "geometric_mean": 14.204803548159113,
+          "host_index": 0,
+          "hostname": "t-20260823121700-5rtng-worker-0",
+          "paired_ratios": [
+            14.188404509325183,
+            14.168507935316601,
+            14.18449368356087,
+            14.2291884281933,
+            14.25109284741892,
+            14.176245695250898,
+            14.218104384756314,
+            14.225297728561426,
+            14.183129853314291,
+            14.173912697836332,
+            14.228086247368864,
+            14.23148921113939
+          ],
+          "paired_units": 12,
+          "wins": 12
+        },
+        {
+          "bootstrap_ci95": [
+            14.176449111478936,
+            14.186073684353655
+          ],
+          "geometric_mean": 14.180750716956705,
+          "host_index": 1,
+          "hostname": "t-20260823121700-5rtng-worker-1",
+          "paired_ratios": [
+            14.180887462450633,
+            14.168382587212278,
+            14.177622907369233,
+            14.187976563593406,
+            14.17638063493914,
+            14.183083366906697,
+            14.180732906111373,
+            14.204240748378044,
+            14.183621501724355,
+            14.17352778752439,
+            14.176432418328144,
+            14.176151135281932
+          ],
+          "paired_units": 12,
+          "wins": 12
+        }
+      ],
+      "paired_units": 24,
+      "wins": 24
+    },
+    "w1_over_fw": {
+      "all_paired_ratios": [
+        0.908484373547873,
+        0.904757758941759,
+        0.9059288558580645,
+        0.9066903632266303,
+        0.9101396752467098,
+        0.906597851138662,
+        0.9045168396512236,
+        0.9110613089505066,
+        0.9064707817768629,
+        0.9051627845492314,
+        0.9076081497610033,
+        0.9076498154143275,
+        0.9077085610704663,
+        0.9074169943568408,
+        0.9072612284086528,
+        0.907832068051668,
+        0.9076315624237303,
+        0.9079078563310446,
+        0.9067997330945762,
+        0.9078493589262001,
+        0.9076827574178576,
+        0.9073322381330763,
+        0.907706915886929,
+        0.9077266526080738
+      ],
+      "definition": "T_W1 / T_FW; values >1 mean fixed-width candidate packing is faster than project width-one",
+      "equal_host_stratified_bootstrap_ci95": [
+        0.9067974366237399,
+        0.9079020900443026
+      ],
+      "geometric_mean": 0.907329084875246,
+      "host_statistics": [
+        {
+          "bootstrap_ci95": [
+            0.9060438620212089,
+            0.9082215340727712
+          ],
+          "geometric_mean": 0.9070869580573072,
+          "host_index": 0,
+          "hostname": "t-20260823121700-5rtng-worker-0",
+          "paired_ratios": [
+            0.908484373547873,
+            0.904757758941759,
+            0.9059288558580645,
+            0.9066903632266303,
+            0.9101396752467098,
+            0.906597851138662,
+            0.9045168396512236,
+            0.9110613089505066,
+            0.9064707817768629,
+            0.9051627845492314,
+            0.9076081497610033,
+            0.9076498154143275
+          ],
+          "paired_units": 12,
+          "wins": 0
+        },
+        {
+          "bootstrap_ci95": [
+            0.9073852910776503,
+            0.9077251820325701
+          ],
+          "geometric_mean": 0.9075712763235881,
+          "host_index": 1,
+          "hostname": "t-20260823121700-5rtng-worker-1",
+          "paired_ratios": [
+            0.9077085610704663,
+            0.9074169943568408,
+            0.9072612284086528,
+            0.907832068051668,
+            0.9076315624237303,
+            0.9079078563310446,
+            0.9067997330945762,
+            0.9078493589262001,
+            0.9076827574178576,
+            0.9073322381330763,
+            0.907706915886929,
+            0.9077266526080738
+          ],
+          "paired_units": 12,
+          "wins": 0
+        }
+      ],
+      "paired_units": 24,
+      "wins": 0
+    }
+  },
+  "semantic_gate_records": 72,
+  "source_commit": "d264c7d6a5324d6bfec394364141977fef144383",
+  "status": "pass",
+  "timing_repeat_is_not_data_seed": true
+}
