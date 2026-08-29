@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use DrainSinkhorn, please cite the accompanying paper."
-title: "DrainSinkhorn: Safe Elimination for Batched Optimal Transport"
+title: "DrainSinkhorn: Safe Elimination for Batched Entropic Optimal Transport"
 type: software
 authors:
   - name: "DrainSinkhorn Contributors"

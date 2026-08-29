@@ -181,7 +181,7 @@ cheaper and eliminating unnecessary updates are complementary optimizations.
 
 ```bibtex
 @misc{drainsinkhorn2026,
-  title        = {DrainSinkhorn: Safe Elimination for Batched Optimal Transport},
+  title        = {DrainSinkhorn: Safe Elimination for Batched Entropic Optimal Transport},
   year         = {2026},
   howpublished = {Software and accompanying manuscript}
 }
